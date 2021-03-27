@@ -1,20 +1,21 @@
-import 'package:animations/screens/NavBetweenRoutes/third_route.dart';
 import 'package:flutter/material.dart';
+
+import 'first_route.dart';
 import 'nav_routes.dart';
 
-class SecondRoute extends StatelessWidget {
+class ThirdRoute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.yellow,
+      backgroundColor: Colors.green,
       body: Container(
         child: Center(
           child: FlatButton(
-            color: Colors.indigo,
+            color: Colors.white,
             onPressed: () {
               Navigator.of(context).push(
                 NavRoutes(
-                  page: ThirdRoute(),
+                  page: FirstRoute(),
                 ),
               );
             },
