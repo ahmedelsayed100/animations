@@ -9,8 +9,12 @@ class ThirdRoute extends StatelessWidget {
       backgroundColor: Colors.green,
       body: Container(
         child: Center(
-          child: FlatButton(
-            color: Colors.white,
+          child: TextButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.resolveWith(
+                (states) => Colors.white,
+              ),
+            ),
             onPressed: () {
               Navigator.of(context).push(
                 NavRoutes(

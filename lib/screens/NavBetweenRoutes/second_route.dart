@@ -9,8 +9,12 @@ class SecondRoute extends StatelessWidget {
       backgroundColor: Colors.yellow,
       body: Container(
         child: Center(
-          child: FlatButton(
-            color: Colors.indigo,
+          child: TextButton(
+            style: ButtonStyle(
+              backgroundColor: MaterialStateProperty.resolveWith(
+                (states) => Colors.indigo,
+              ),
+            ),
             onPressed: () {
               Navigator.of(context).push(
                 NavRoutes(
